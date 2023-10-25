@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance Quotes</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -12,27 +12,34 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#auto">Auto Insurance</a></li>
-                <li><a href="#home">Home Insurance</a></li>
-                <li><a href="#life">Life Insurance</a></li>
+                <li><a href="#home-insurance">Home Insurance</a></li>
+                <li><a href="#life-insurance">Life Insurance</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="home" class="content">
-            <h1>Welcome to Insurance Quotes</h1>
-            <p>Get quotes for auto, home, and life insurance policies.</p>
-        </section>
-        <section id="auto" class="content">
-            <h2>Auto Insurance</h2>
-            <!-- Auto insurance content goes here -->
-        </section>
-        <section id="home-insurance" class="content">
-            <h2>Home Insurance</h2>
-            <!-- Home insurance content goes here -->
-        </section>
-        <section id="life-insurance" class="content">
-            <h2>Life Insurance</h2>
-            <!-- Life insurance content goes here -->
+        <section class="content">
+            <div class="left-column">
+                <img src="american-flag.jpg" alt="American Flag">
+            </div>
+            <div class="right-column">
+                <h1>Welcome to Insurance Quotes</h1>
+                <p>Get quotes for auto, home, and life insurance policies.</p>
+                <form>
+                    <h2>Get a Quote</h2>
+                    <label for="insurance-type">Select Insurance Type:</label>
+                    <select id="insurance-type" name="insurance-type">
+                        <option value="auto">Auto Insurance</option>
+                        <option value="home">Home Insurance</option>
+                        <option value="life">Life Insurance</option>
+                    </select>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Get a Quote</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
