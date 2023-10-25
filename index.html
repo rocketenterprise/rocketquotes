@@ -3,46 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Affiliate</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Insurance Quotes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#auto">Auto Insurance</a></li>
+                <li><a href="#home">Home Insurance</a></li>
+                <li><a href="#life">Life Insurance</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="home" class="hero">
-            <h1>Welcome to Insurance Affiliate</h1>
-            <p>Your Trusted Source for Insurance Products</p>
+        <section class="content left">
+            <img src="usa-flag.jpg" alt="Patriotic American Flag">
         </section>
-        <section id="about" class="content">
-            <h2>About Us</h2>
-            <p>We are dedicated to helping you find the best insurance products to protect your future.</p>
-        </section>
-        <section id="products" class="content">
-            <h2>Our Products</h2>
-            <ul>
-                <li>Auto Insurance</li>
-                <li>Home Insurance</li>
-                <li>Life Insurance</li>
-                <!-- Add more insurance products here -->
-            </ul>
-        </section>
-        <section id="contact" class="content">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
-            <a href="mailto:info@insuranceaffiliate.com">info@insuranceaffiliate.com</a>
+        <section class="content right">
+            <h1>Get Insurance Quotes</h1>
+            <form>
+                <label for="insurance-type">Select Insurance Type:</label>
+                <select id="insurance-type" name="insurance-type">
+                    <option value="auto">Auto Insurance</option>
+                    <option value="home">Home Insurance</option>
+                    <option value="life">Life Insurance</option>
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Get a Quote</button>
+            </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Insurance Affiliate</p>
-    </footer>
 </body>
 </html>
