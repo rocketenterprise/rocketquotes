@@ -1,18 +1,13 @@
-/* Reset some default styles */
-body, h1, label, input, select, ul, li {
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-}
-
 header {
-    background-color: #214c96; /* Navy Blue */
+    background-color: #20232A; /* Dark gray for the navbar */
     color: white;
-    text-align: center;
     padding: 1rem 0;
 }
 
@@ -38,53 +33,62 @@ main {
     padding: 2rem;
 }
 
-.content {
-    flex-basis: calc(50% - 20px);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 5px;
+.left-column {
+    flex-basis: 50%;
 }
 
-.left img {
-    max-width: 100%;
+.left-column img {
+    width: 100%;
     height: auto;
 }
 
-.right {
+.right-column {
+    flex-basis: 50%;
+    background-color: #FF4136; /* Red for the right column */
+    color: white;
+    padding: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 form {
-    max-width: 300px;
-    margin: 0 auto;
+    text-align: left;
+}
+
+form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 5px;
     font-weight: bold;
-    color: #214c96; /* Navy Blue */
 }
 
 select, input {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 button {
-    width: 100%;
-    background-color: #214c96; /* Navy Blue */
+    background-color: #0074D9; /* Blue for the button */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
 }
 
 button:hover {
-    background-color: #001f4d; /* Darker Navy Blue */
+    background-color: #0056B3; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #20232A;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
