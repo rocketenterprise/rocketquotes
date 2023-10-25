@@ -3,52 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Insurance Quotes</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
     <header>
-        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#auto">Auto Insurance</a></li>
+                <li><a href="#home">Home Insurance</a></li>
+                <li><a href="#life">Life Insurance</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section class="background-image">
-        <!-- Add your background image here -->
-    </section>
-    
     <main>
-        <section id="about" class="content">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <section class="content left">
+            <img src="usa-flag.jpg" alt="Patriotic American Flag">
         </section>
-        
-        <section id="contact" class="content">
-            <h2>Contact Us</h2>
-            <p>Fill out the form below to get in touch with us.</p>
+        <section class="content right">
+            <h1>Get Insurance Quotes</h1>
             <form>
-                <div class="card">
-                    <img src="card1.jpg" alt="Card 1">
-                    <input type="radio" name="card" id="card1" value="Card 1">
-                    <label for="card1">Card 1</label>
-                </div>
-                <div class="card">
-                    <img src="card2.jpg" alt="Card 2">
-                    <input type="radio" name="card" id="card2" value="Card 2">
-                    <label for="card2">Card 2</label>
-                </div>
-                <div class="card">
-                    <img src="card3.jpg" alt="Card 3">
-                    <input type="radio" name="card" id="card3" value="Card 3">
-                    <label for="card3">Card 3</label>
-                </div>
-                <button type="submit">Submit</button>
+                <label for="insurance-type">Select Insurance Type:</label>
+                <select id="insurance-type" name="insurance-type">
+                    <option value="auto">Auto Insurance</option>
+                    <option value="home">Home Insurance</option>
+                    <option value="life">Life Insurance</option>
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Get a Quote</button>
             </form>
         </section>
     </main>
