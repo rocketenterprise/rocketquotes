@@ -58,6 +58,11 @@ main {
     font-weight: bold;
 }
 
+select, input {
+    width: 100%;
+    padding: 10px;
+}
+
 button {
     background-color: #0074D9; /* Blue for the button */
     color: white;
@@ -68,12 +73,4 @@ button {
 
 button:hover {
     background-color: #0056B3; /* Darker blue on hover */
-}
-
-.carousel {
-    /* Carousel styles go here */
-}
-
-.popup {
-    /* Pop-up styles go here */
 }
