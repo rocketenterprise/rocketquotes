@@ -17,7 +17,7 @@
     </header>
     <main>
         <section class="left-column">
-            <div id="image-carousel" class="carousel">
+            <div class="image-carousel">
                 <!-- Carousel images go here -->
             </div>
         </section>
@@ -41,8 +41,8 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="zipcode">Zip Code (U.S. only):</label>
-                    <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" required>
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="text" id="zipcode" name="zipcode" pattern="^\d{5}(-\d{4})?$" required>
                 </div>
                 <button type="submit" id="submit-button">Get Quotes</button>
             </form>

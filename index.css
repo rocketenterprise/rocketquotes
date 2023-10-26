@@ -1,4 +1,4 @@
-/* Your CSS styles here */
+* Your CSS styles here */
 
 body {
     font-family: Arial, sans-serif;
@@ -41,6 +41,10 @@ main {
     flex-basis: calc(50% - 20px);
 }
 
+.image-carousel {
+    /* Carousel styles go here */
+}
+
 .right-column {
     flex-basis: calc(50% - 20px);
     background-color: #0074D9; /* Blue for the right column */
@@ -73,10 +77,6 @@ button {
 
 button:hover {
     background-color: #0056B3; /* Darker blue on hover */
-}
-
-.carousel {
-    /* Carousel styles go here */
 }
 
 .popup {
