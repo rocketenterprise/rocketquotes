@@ -6,11 +6,24 @@ document.getElementById("insurance-form").addEventListener("submit", function (e
     const gender = document.getElementById("gender").value;
     const zipcode = document.getElementById("zipcode").value;
 
-    // You can open a new tab or display quotes in a modal here
-    // In a real-world scenario, you'd need to fetch quotes from a server
+    // Simulate generating quotes (replace with actual quote generation logic)
+    const quotes = [
+        { provider: "Provider 1", quote: "$100/month" },
+        { provider: "Provider 2", quote: "$120/month" },
+        { provider: "Provider 3", quote: "$90/month" },
+    ];
 
-    // For a new tab:
-    window.open(`quotes.html?age=${age}&gender=${gender}&zipcode=${zipcode}`, "_blank");
-    
-    // For a modal, you can use a library like Bootstrap or create a custom one.
+    // Create and display the pop-up
+    const popup = document.getElementById("popup");
+    popup.innerHTML = "<h2>Quotes for You:</h2>";
+    quotes.forEach((quote) => {
+        popup.innerHTML += `
+            <div class="quote-card">
+                <h3>${quote.provider}</h3>
+                <p>${quote.quote}</p>
+            </div>
+        `;
+    });
+
+    popup.style.display = "block";
 });
