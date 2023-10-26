@@ -3,39 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Quotes</title>
+    <title>Insurance Resources</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#auto">About</a></li>
-                <li><a href="#home">How it works</a></li>
-                <li><a href="#life">Resources</a></li>
+                <li><a href="#life-insurance">Life Insurance</a></li>
+                <li><a href="#medicare">Medicare Resources</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="content left">
-            <img src="usa-flag.jpg" alt="Patriotic American Flag">
-        </section>
-        <section class="content right">
-            <h1>Get Insurance Quotes in Minutes</h1>
-            <form>
-                <label for="insurance-type">Select Insurance Type:</label>
-                <select id="insurance-type" name="insurance-type">
-                    <option value="auto">Auto Insurance</option>
-                    <option value="home">Home Insurance</option>
-                    <option value="life">Life Insurance</option>
-                </select>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Get a Quote</button>
+        <section class="left-column">
+            <h2>Get Insurance Quotes</h2>
+            <form id="insurance-form">
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="text" id="zipcode" name="zipcode" required>
+                </div>
+                <button type="submit" id="submit-button">Get Quotes</button>
             </form>
         </section>
+        <section class="right-column">
+            <div id="carousel" class="carousel">
+                <!-- Carousel items go here -->
+            </div>
+        </section>
     </main>
+    <div id="popup" class="popup">
+        <!-- Pop-up content goes here -->
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
