@@ -15,7 +15,7 @@ document.getElementById("insurance-form").addEventListener("submit", function (e
 
     // Create and display the pop-up
     const popup = document.getElementById("popup");
-    popup.innerHTML = "<h2>Quotes for You:</h2>";
+    popup.innerHTML = "<h2>Insurance Quotes</h2>";
     quotes.forEach((quote) => {
         popup.innerHTML += `
             <div class="quote-card">

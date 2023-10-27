@@ -7,11 +7,16 @@ body {
     padding: 0;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 header {
-    background-color: #20232A; /* Dark gray for the navbar */
+    background-color: #20232A;
     color: white;
-    text-align: center;
-    padding: 1rem 0;
+    padding: 10px;
 }
 
 nav ul {
@@ -30,44 +35,32 @@ nav ul li a {
     font-weight: bold;
 }
 
-.main {
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
+.left-column {
+    width: 100%;
 }
 
-.left-container {
-    background-color: #0074D9; /* Blue for the left container */
+.right-column {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.quote-form {
+    background-color: #0074D9;
     color: white;
+    padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.image-carousel {
-    /* Carousel styles go here */
-}
-
-.right-container {
-    background-color: #0074D9; /* Blue for the right container */
-    color: white;
-    border-radius: 5px;
-    padding: 2rem;
-    margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
+form label {
     display: block;
     font-weight: bold;
 }
@@ -75,10 +68,11 @@ nav ul li a {
 select, input {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 button {
-    background-color: #0074D9; /* Blue for the button */
+    background-color: #0074D9;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -86,10 +80,17 @@ button {
 }
 
 button:hover {
-    background-color: #0056B3; /* Darker blue on hover */
+    background-color: #0056B3;
 }
 
 .popup {
     display: none;
-    /* Pop-up styles go here */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
 }
