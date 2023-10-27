@@ -3,61 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patriotic Insurance</title>
+    <title>Insurance Resources</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#life-insurance">Life Insurance</a></li>
-                    <li><a href="#medicare">Medicare Resources</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+        <nav>
+            <ul>
+                <li><a href="#life-insurance">Life Insurance</a></li>
+                <li><a href="#medicare">Medicare Resources</a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <div class="left-column">
+            <div class="left-container">
                 <div class="image-carousel">
                     <!-- Carousel images go here -->
                 </div>
             </div>
-            <div class="right-column">
-                <div class="quote-form">
-                    <h2>Get Insurance Quotes</h2>
-                    <form id="insurance-form">
-                        <div class="form-group">
-                            <label for="age">Age:</label>
-                            <select id="age" name="age">
-                                <option value="16-24">16-24</option>
-                                <option value="25-39">25-39</option>
-                                <option value="40-64">40-64</option>
-                                <option value="65+">65+</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="gender">Gender:</label>
-                            <select id="gender" name="gender">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="zipcode">Zip Code:</label>
-                            <input type="text" id="zipcode" name="zipcode" pattern="^\d{5}(-\d{4})?$" required>
-                        </div>
-                        <button type="submit" id="submit-button">Get Quotes</button>
-                    </form>
-                </div>
+            <div class="right-container">
+                <h2>Get Insurance Quotes</h2>
+                <form id="insurance-form">
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <select id="age" name="age">
+                            <option value="16-24">16-24</option>
+                            <option value="25-39">25-39</option>
+                            <option value="40-64">40-64</option>
+                            <option value="65+">65+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode">Zip Code:</label>
+                        <input type="text" id="zipcode" name="zipcode" pattern="^\d{5}(-\d{4})?$" required>
+                    </div>
+                    <button type="submit" id="submit-button">Get Quotes</button>
+                </form>
             </div>
         </div>
-
-        <div id="popup" class="popup">
-            <!-- Pop-up content goes here -->
-        </div>
+    </div>
+    <div id="popup" class="popup">
+        <!-- Pop-up content goes here -->
     </div>
     <script src="index.js"></script>
 </body>
 </html>
+
 

@@ -8,21 +8,17 @@ body {
 }
 
 .wrapper {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #20232A;
-    color: white;
-    padding: 10px;
+    max-width: 100%;
+    padding: 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    background-color: #20232A;
+    color: white;
+    padding: 10px 0;
 }
 
 nav ul li {
@@ -38,37 +34,38 @@ nav ul li a {
 .container {
     display: flex;
     flex-direction: column;
-}
-
-.left-column {
-    width: 100%;
-}
-
-.right-column {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.quote-form {
     background-color: #0074D9;
     color: white;
-    padding: 20px;
     border-radius: 5px;
+    margin: 20px 0;
+}
+
+.left-container {
+    /* Styles for the left container */
+}
+
+.image-carousel {
+    /* Carousel styles go here */
+}
+
+.right-container {
+    padding: 20px;
+    /* Styles for the right container */
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-form label {
+.form-group label {
     display: block;
     font-weight: bold;
+    color: white;
 }
 
 select, input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
 }
 
 button {
@@ -85,12 +82,5 @@ button:hover {
 
 .popup {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
+    /* Pop-up styles go here */
 }
