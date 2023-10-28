@@ -41,14 +41,17 @@ nav ul li a {
 }
 
 .left-container {
+    flex: 2;
     /* Styles for the left container */
 }
 
 .image-carousel {
+    width: 75%;
     /* Carousel styles go here */
 }
 
 .right-container {
+    flex: 1;
     padding: 20px;
     /* Styles for the right container */
 }
